@@ -1,0 +1,69 @@
+<h1>Angular pipes</h1>
+
+<div *ngFor="let post of posts">
+  <h3>
+    {{post.title}}
+  </h3>
+  <p>
+    {{post.text}}
+  </p>
+</div>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>Pipes for numbers</h2>
+<p class="paragraph"> <mark>Без пайпа: </mark> {{e}}</p>
+<p class="paragraph"> <mark>Пайп number: </mark> {{e | number}}</p>
+<p class="paragraph"> <mark>Пайп number:'1.1-5': </mark> {{e | number:'1.1-5' }}</p>
+<p class="paragraph"> <mark>Пайп number:'3.1-1': </mark> {{e | number:'3.1-1' }}</p>
+<p class="paragraph"> <mark>Пайп number:'1.0-0': </mark> {{e | number:'1.0-0' }}</p>
+
+<h2>Pipes for strings</h2>
+<p class="paragraph"><mark>Без пайпа: </mark>{{str}}</p>
+<p class="paragraph"><mark>Пайп uppercase: </mark>{{str | uppercase}}</p>
+<p class="paragraph"><mark>Пайп lowercase: </mark>{{str | lowercase}}</p>
+<p class="paragraph"><mark>Пайп titlecase: </mark>{{str | titlecase}}</p>
+<p class="paragraph"><mark>Пайп slice:1:-2: </mark>{{str | slice:1:-2}}</p>
+
+<h2>Pipes for Dates</h2>
+<p class="paragraph"><mark>Без пайпа: </mark>{{date}}</p>
+<p class="paragraph"><mark>Пайп date: </mark>{{date | date}}</p>
+<p class="paragraph"><mark>Пайп date:'fullDate' </mark>{{date | date:'fullDate'}}</p>
+<p class="paragraph"><mark>Пайп date:'longDate' </mark>{{date | date:'longDate'}}</p>
+<p class="paragraph"><mark>Пайп date:'yyyy' </mark>{{date | date:'yyyy'}}</p>
+<p class="paragraph"><mark>Пайп date:'MMMM yyyy' </mark>{{date | date:'MMMM yyyy'}}</p>
+<p class="paragraph"><mark>Пайп date:'MMMM dd yyyy' </mark>{{date | date:'MMMM dd yyyy'}}</p>
+<p class="paragraph"><mark>Пайп date:'MMMM dd, yyyy, HH:mm:ss' </mark>{{date | date:'MMMM dd, yyyy, HH:mm:ss'}}</p>
+
+<h2>Other Pipes</h2>
+<p class="paragraph"><mark>Без пайпа: </mark>{{float}}</p>
+<p class="paragraph"><mark>Пайп currency: </mark>{{float | currency}}</p>
+<p class="paragraph"><mark>Пайп percent: </mark>{{float | percent}}</p>
+ 
+<h2>Custom Pipes (Везде преобразуется число 10)</h2>
+<p class="paragraph"><mark>Пайп mult: </mark>{{10 | mult}}</p>
+<p class="paragraph"><mark>Пайп mult:2: </mark>{{10 | mult:2}}</p>
+<p class="paragraph"><mark>Пайп mult:3: </mark>{{10 | mult:3}}</p>
+<p class="paragraph"><mark>Пайп mult:4: </mark>{{10 | mult:5}}</p>
+<p class="paragraph"><mark>Пайп mult:5: </mark>{{10 | mult:8}}</p>
+<p class="paragraph"><mark>Пайп mult:13: </mark>{{10 | mult:13}}</p>
